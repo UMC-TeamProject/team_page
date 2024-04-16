@@ -1,0 +1,47 @@
+.guestBook {
+    background-color: rgb(196, 196, 196);
+}
+
+.title {
+    position: relative;
+    left: 40px;
+    top: 50px;
+}
+
+.guestBook > button {
+    float: right;
+    margin: 10px 40px 20px auto;
+}
+
+.guestBox {
+    background-color: gray;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    margin: 80px 40px auto 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a:link {
+    color : black;
+  }
+  a:visited {
+    color : purple;
+  }
+  a:hover {
+    color : black;
+  }
+  a:active {
+    color : blue;
+  }
+
+.link {
+    text-align: right;   
+}
+.moreContent {
+    margin: 20px 50px 50px auto;
+    padding-bottom: 30px;
+    text-align: right;
+}
