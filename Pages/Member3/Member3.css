@@ -1,4 +1,10 @@
+.guestBook-frame {
+  display: flex;
+  justify-content: center;
+}
+
 .guestBook {
+    width: 1250px;
     background-color: rgb(196, 196, 196);
 }
 
@@ -12,8 +18,15 @@
     float: right;
     margin: 10px 40px 20px auto;
 }
+.guestBox-frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .guestBox {
+    width: 1250px;
     background-color: gray;
     padding: 50px;
     border-radius: 10px;
