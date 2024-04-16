@@ -1,8 +1,14 @@
+.guestBook-frame {
+  display: flex;
+  justify-content: center;
+}
 
 .guestBook {
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(184, 181, 181);
-  border-radius: 10px;
+    width: 1250px;
+    background-color: rgb(196, 196, 196);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 10px;
 }
 
 .title {
@@ -34,12 +40,21 @@
 }
 
 .guestBox {
-  padding: 40px 40px 0px 40px;
-  display: flex;
-  margin: 80px auto auto auto;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    margin: 80px 40px auto 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0px 40px;
+    display: flex;
+    margin: 80px auto auto auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card {

@@ -25,12 +25,12 @@ body {
 }
 
 .content .content-inside {
-    height: 300px;
+    /* height: 300px; */
     display: flex;
     flex-direction: column;
 }
 
-.content ,.content-inside .content-name {
+.content .content-inside .content-name {
     font-size: 18px;
     font-weight: 800;
     margin-top: 20px;
