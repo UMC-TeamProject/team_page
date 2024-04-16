@@ -1,0 +1,58 @@
+.guestBook-frame {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .guestBook {
+      width: 1250px;
+      height: 550px;
+      background-color: rgb(196, 196, 196);
+      background-color: rgb(255, 255, 255);
+      border: 1px solid rgb(184, 181, 181);
+      border-radius: 10px;
+  }
+  
+  .title {
+    position: relative;
+    left: 80px;
+    top: 40px;
+  }
+
+  .guestBox {
+    position: relative;
+    left: 10px;
+    width: 1100px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 50px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card {
+  width: 700px;
+  height: 380px;
+  }
+
+  p {
+  max-width: 500px;
+  position: relative;
+  left: 40px;
+  top: 50px;
+  }
+
+  .box {
+  position: relative;
+  left: 50px;
+  top: 10px;
+  width: 350px;
+  height: 350px;
+  border-radius: 30%;
+  overflow: hidden;
+}
+  .profile {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
