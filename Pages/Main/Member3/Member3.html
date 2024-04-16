@@ -14,13 +14,20 @@
   </head>
 
   <body>
+
+    <script>
+      function goToParentFolder() {
+        window.location.href = '../PostUpload/PostUpload.html';
+      }
+    </script>
+
     <div class="guestBook-frame">
       <div class="guestBook">
         <div class="title">
           <h1>방명록</h1>
         </div>
 
-        <button class="btn">글쓰기</button>
+        <button class="btn" type="button" onClick="goToParentFolder()">글쓰기</button>
 
         <div class="guestBox">
           
