@@ -1,9 +1,9 @@
 .iThink {
-    width: 400px;
-    height: 500px;
+    width: 420px;
+    height: 470px;
     display: flex;
     flex-direction: column;
-    border: 1px solid rgb(209, 209, 209);;
+    border: 1px solid rgb(209, 209, 209);
 }
 
 h3 {
@@ -20,7 +20,7 @@ h3 {
 .textbox {
     position:relative;
     display: inline-block; 
-    margin: 20px;
+    margin: 20px 20px 5px 20px;
     padding: 15px;  
     color: black; 
     border-radius: 10px; 
@@ -40,7 +40,7 @@ h3 {
     position:relative;
     float: right;
     display: inline-block; 
-    margin: 20px; 
+    margin: 20px 20px 5px 20px;
     padding: 15px;  
     color: black; 
     border-radius: 10px; 
