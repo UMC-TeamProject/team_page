@@ -1,47 +1,88 @@
+
 .guestBook {
-    background-color: rgb(196, 196, 196);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(184, 181, 181);
+  border-radius: 10px;
 }
 
 .title {
-    position: relative;
-    left: 40px;
-    top: 50px;
+  position: relative;
+  left: 40px;
+  top: 50px;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #222629;
+  padding: 15px 60px 15px 60px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #c9d0d4;
+  text-decoration: none;
 }
 
 .guestBook > button {
-    float: right;
-    margin: 10px 40px 20px auto;
+  float: right;
+  margin: 10px 40px 0px auto;
 }
 
 .guestBox {
-    background-color: gray;
-    padding: 50px;
-    border-radius: 10px;
-    display: flex;
-    margin: 80px 40px auto 40px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  padding: 40px 40px 0px 40px;
+  display: flex;
+  margin: 80px auto auto auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  width: 350px;
+  height: 190px;
+}
+
+.imgTitleText {
+  display: flex;
+}
+
+.titleText {
+  position: relative;
+  left: 8px;
+  top: 25px;
+}
+
+h6 {
+  max-width: 400px;
+  text-align: justify;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+  }
 }
 
 a:link {
-    color : black;
-  }
-  a:visited {
-    color : purple;
-  }
-  a:hover {
-    color : black;
-  }
-  a:active {
-    color : blue;
-  }
-
-.link {
-    text-align: right;   
+  color: black;
 }
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: blue;
+}
+
 .moreContent {
-    margin: 20px 50px 50px auto;
-    padding-bottom: 30px;
-    text-align: right;
+  margin: 20px 50px 50px auto;
+  padding-bottom: 30px;
+  text-align: right;
 }
