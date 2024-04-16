@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .standard {
+            width: 200px;
+            height: 300px;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-align: center;
+            line-height: 300px;
+            border: 1px solid;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(1500px);
+            margin-right: 20px;
+        }
+
+        .door {
+            width: 200px;
+            height: 300px;
+            border: 1px solid;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: black;
+            transform-style: preserve-3d;
+            transform-origin: right;
+            transition: all 1.5s;    
+        }
+
+        
+
+        .door::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .standard:hover .door {
+            transform: rotateY(90deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="standard">
+        <div class="sunmin"><img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\선민님.png" alt="선민님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+    <div class="standard">
+        <div class="sunmin"><img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\윤성님.png" alt="윤성님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+
+    <div class="standard">
+        <div class="sunmin"><img src="" alt="예진님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+
+    <div class="standard">
+        <div class="sunmin"><img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\민영님.png" alt="민영님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+
+    <div class="standard">
+        <div class="sunmin"><img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\정민님.png" alt="정민님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+
+    <div class="standard">
+        <div class="sunmin"><img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\승현님.png" alt="승현님">
+        </div>
+        <img src="C:\Users\hwamg\OneDrive\Desktop\새 폴더\team_page\Pages\Member6\문.png" class="door">
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
