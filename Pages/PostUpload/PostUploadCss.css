@@ -1,0 +1,63 @@
+.postingbox {
+    width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgb(203, 203, 203);
+}
+
+.postingbox > button {
+    margin: 30px auto 1px auto;
+}
+
+.cards {
+    width: 1200px;
+    margin: 50px auto 0px auto;
+}
+
+.card {
+    width: 350px;
+    height: 190px;
+    background-color: rgb(249, 249, 232);
+    border: 0px;
+    margin: 20px;
+}
+
+.imgTitleText {
+    display: flex;
+}
+
+.titleText {
+    position: relative;
+    left: 8px;
+    top: 25px;
+}
+
+h6 {
+    max-width: 400px;
+    text-align: justify;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+}
+h3 {
+    width: 1200px;
+    margin: 30px auto 0px auto;
+    font-weight: 900;
+}
+
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #222629;
+    padding: 15px 60px;
+    text-decoration: none;
+    margin: 50px auto;
+    display: flex;
+}
