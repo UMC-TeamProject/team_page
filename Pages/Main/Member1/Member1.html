@@ -8,54 +8,103 @@
     <link rel="stylesheet" href="Member1.css">
 </head>
 
-<body>
-    <script>
+<body>   
+    <script>     
+        function button_click() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder();
+            };
+        }
         function goToParentFolder() {
             window.parent.location.href = '../../PR/Sunminpr/Sunminpr.html';
+        }
+
+        function button_click2() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder2();
+            };
         }
         function goToParentFolder2() {
             window.parent.location.href = '../../PR/Yoonsungpr/Yoonsungpr.html';
         }
+        
+
+        function button_click3() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder3();
+            };
+        }
         function goToParentFolder3() {
             window.parent.location.href = '../../PR/Yejinpr/Yejinpr.html';
+        }
+
+        function button_click4() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder4();
+            };
         }
         function goToParentFolder4() {
             window.parent.location.href = '../../PR/Minyeongpr/Minyeongpr.html';
         }
-        function goToParentFolder5() {
+
+        function button_click5() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder5();
+            };
+        }
+        function goToParentFolder5(){
             window.parent.location.href = '../../PR/Jeongminpr/Jeongminpr.html';
         }
-        function goToParentFolder6() {
+
+        function button_click6() {
+            var audio = new Audio('knock.mp3');
+            audio.play();
+            audio.onended = function () {
+                goToParentFolder6();
+            };
+        }
+        function goToParentFolder6(){
             window.parent.location.href = '../../PR/Seunghyunpr/Seunghyunpr.html';
         }
+       
     </script>
-    
+   
 
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀장 김선민</p>
-            <a onClick="goToParentFolder()" height="5" width="10" target="_blank">
+
+                <button class="Knock"  onclick="button_click()"><img src="" alt=""></button>
                 <img src="../Images/선민님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
-                안녕하세요! 저는 프론트엔드 개발자가 되고싶은 김선민입니다.
-                <br> 
-                <br> 
+            저는 프론트엔드 개발자가 되고싶은 김선민입니다.
+               
             </p>
         </div>
-        <div></div>
+        <div>
+        </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
+
     </div>
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀원 양윤성</p>
-            <a onClick="goToParentFolder2()" height="5" width="10" target="_blank">
+            <button class="Knock" onclick="button_click2()">✊🏼</button>
                 <img src="../Images/윤성님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
-                사람들과 소통 하는 것을 좋아하고 매일 성장하는 개발자가 되려 노력하는 양윤성 입니다.
-                <br> 
-                <br>
+               매일 성장하는 개발자가 되려 노력하는 양윤성 입니다.
             </p>
         </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
@@ -63,15 +112,15 @@
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀원 최예진</p>
-            <a onClick="goToParentFolder3()" height="5" width="10" target="_blank">
+            <button class="Knock" onclick="button_click3()">✊🏼</button>
 
 
                 <img src="../Images/예진님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
-               
-                <br> 비전공자로 프론트엔드에 도전하는 최예진입니다!
-                
+                비전공자로 프론트엔드에 도전하는 최예진입니다!
+                <br> 
+
             </p>
         </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
@@ -79,13 +128,11 @@
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀원 장민영</p>
-            <a onClick="goToParentFolder4()" height="5" width="10" target="_blank">
+            <button class="Knock" onclick="button_click4()">✊🏼</button>
                 <img src="../Images/민영님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
                 안녕하세요 저는 장민영입니다.
-                <br> 앞으로 잘부탁드립니다~!
-                <br> 다들 화이팅해봐요!!!
             </p>
         </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
@@ -93,13 +140,12 @@
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀원 한정민</p>
-            <a onClick="goToParentFolder5()" height="5" width="10" target="_blank">
+            <button class="Knock" onclick="button_click5()">✊🏼</button>
                 <img src="../Images/정민님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
                 안녕하세요 저는 한정민입니다.
-                <br> 앞으로 잘부탁드립니다~!
-                <br> 다들 화이팅해봐요!!!
+
             </p>
         </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
@@ -107,13 +153,13 @@
     <div class="content">
         <div class="content-inside">
             <p class="content-name">팀원 황승현</p>
-            <a onClick="goToParentFolder6()" height="5" width="10" target="_blank">
+            <button class="Knock" onclick="button_click6()">✊🏼</button>
                 <img src="../Images/승현님.png" alt="sunmin" class="profileImg">
             </a>
             <p class="content-text">
                 Hi~
-                <br> 
-                <br> 
+                <br>
+                <br>
             </p>
         </div>
         <img src="../Images/문이미지.png" class="door" alt="doorImg">
