@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Image Upload</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="project-frame">
+
+        <div class="imageUpload">
+            <input type="file" class="inp" onchange="getImageData(event)" style="display: none;" />
+            <button onclick="selectImage()" class="selectImage"><span>프로젝트 선택</span></button>
+            <span class="filedata"></span>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="list">
+
+            <div class="image123">
+                <div class="box">
+                    <div class="thumb">
+                        <img class="img" id="uploadedImage" />
+                    </div>
+                    <div class="info">
+                        <div class="info_wrap">
+                            <p>HOVER ME!!!!<br><br>
+                              Lorem ipsum dolor<br>sit amet consectetur,<br>adipisicing elit. Accusantium corrupti reiciendis voluptatibus</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img class="img" id="uploadedImage" /> -->
+                <div class="btn-flex">
+                    <button onclick="uploadImage()" class="upload">추가</button>
+                    <span class="loading">Loading...</span>
+                </div>
+            </div>
+
+            <div class="image123">
+                <div class="box">
+                    <div class="thumb">
+                        <img class="img2" id="uploadedImage2" />
+                    </div>
+                    <div class="info">
+                        <div class="info_wrap">
+                            <p>HOVER ME!!!!<br><br>
+                              Lorem ipsum dolor<br>sit amet consectetur,<br>adipisicing elit. Accusantium corrupti reiciendis voluptatibus</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- <img class="img2" id="uploadedImage2" /> -->
+                </div>
+                <div class="btn-flex">
+                    <button onclick="uploadImage2()" class="upload">추가</button>
+                    <span class="loading2">Loading...</span>
+                </div>
+            </div>
+
+            <div class="image123">
+                <div class="box">
+                    <div class="thumb">
+                        <img class="img3" id="uploadedImage3" />
+                    </div>
+                    <div class="info">
+                        <div class="info_wrap">
+                            <p>HOVER ME!!!!<br><br>
+                              Lorem ipsum dolor<br>sit amet consectetur,<br>adipisicing elit. Accusantium corrupti reiciendis voluptatibus</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img class="img3" id="uploadedImage3" /> -->
+                <div class="btn-flex">
+                    <button onclick="uploadImage3()" class="upload">추가</button>
+                    <span class="loading3">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="project.js"></script>
+</body>
+
+</html>
+
+

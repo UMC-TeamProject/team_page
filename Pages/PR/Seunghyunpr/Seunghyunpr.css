@@ -1,0 +1,40 @@
+.PrPage {
+    margin-left: 30px;
+}
+
+.iframe-header {
+    width: 100%;
+    display: flex;
+}
+
+.iframe {
+    border: none;
+}
+
+#frameHeaderBar {
+    height: 140px;
+}
+
+#iframe1 {
+
+}
+
+#iframe2 {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame3 {       
+    height: 350px;
+    /* border: 1px solid; */
+}
+
+#frame4 {
+    height: 500px;
+}
+
+#frame5 {
+    height: 500px;
+}

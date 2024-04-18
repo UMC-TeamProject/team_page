@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebase Image Upload</title>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+        <link rel="stylesheet" href="ImageUpload.css">
+    </head>
+    <body>
+        <div class="header-frame">
+            <h1 class="pageTitle">자격증</h1>
+            <div class="selectImage-frame">
+                <input type="file" class="inp" onchange="getImageData(event)" style="display: none;"/>
+                <button onclick="selectImage()" class="selectImage">파일불러오기</button>                    
+            </div>
+            <div class="progressBar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="imageUpload">
+            <!-- <span class="filedata"></span> -->
+
+            <div class="upload-frame">
+                <div class="image-felx">
+                    <div class="image1">
+                        <img class="img" id="uploadedImage" />
+                        <div class="image1-flex">
+                            <span class="loading">Loading...</span>  
+                            <button onclick="uploadImage()" class="upload">Upload</button>                      
+                        </div>                
+                    </div>
+
+                    <div class="image2">
+                        <img class="img2" id="uploadedImage2" />   
+                        <div class="image3-flex">
+                            <span class="loading2">Loading...</span>  
+                            <button onclick="uploadImage2()" class="upload">Upload</button>                      
+                        </div>             
+                    </div>
+
+                    <div class="image3">
+                        <img class="img3" id="uploadedImage3" />
+                        <div class="image3-flex">
+                            <span class="loading3">Loading...</span>
+                            <button onclick="uploadImage3()" class="upload">Upload</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="selectImage-frame">
+                    <input type="file" class="inp" onchange="getImageData(event)" style="display: none;"/>
+                    <button onclick="selectImage()" class="selectImage">+</button>                    
+                </div> -->
+            </div>
+
+        </div>
+
+        <script src="ImageUpload.js"></script>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+.Profile-frame {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.Profile-header {
+
+}
+
+.profile-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.profile-img {
+    width: 220px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 이름 */
+.profile-name {
+    display: flex;
+}
+.nameTitle {
+    width: 120px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.name {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* MBTI */
+.profile-mbti {
+    display: flex;
+}
+.mbtiTitle {
+    width: 120px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.mbti {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* 취미 */
+.profile-hobby {
+    display: flex;
+}
+.hobbyTitle {
+    width: 120px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.hobby {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* 한줄 소개 */
+.profile-introduce {
+    display: flex;
+}
+.introduceTitle {
+    width: 120px;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.introduce {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* 태그 */
+.profile-tag {
+    display: flex;
+}
+
+.tagFrame {
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid lightgray;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.tag {
+    font-size: 16px;
+    text-align: center;
+}
