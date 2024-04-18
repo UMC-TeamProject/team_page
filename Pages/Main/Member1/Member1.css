@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -79,4 +79,21 @@ body {
 
 .content:hover .door {
     transform: rotateY(90deg);
+}
+
+.Knock {
+    font-size: x-large;
+    font-weight: bold;
+    margin: auto;
+    border: none;
+   background-color: transparent; 
+   /* /* background-image: url("knock\ \(2\).jpg"); */
+   background-size: cover;
+   background-position: center;
+   margin: auto;
+
+
+}
+.content-text{
+    font-size: 3px;
 }
