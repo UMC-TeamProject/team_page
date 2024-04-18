@@ -28,7 +28,6 @@ $(function () {
       if ($(".col:hidden").length == 0) {
         // check if any hidden divs still exist
         $("#loadAll").empty();
-        alert("No more"); // alert if there are none left
       }
     });
   });

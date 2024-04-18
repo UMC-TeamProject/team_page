@@ -4,6 +4,8 @@
 }
 
 .guestBook {
+  display: flex;
+  flex-direction: column;
     width: 1250px;
     background-color: rgb(196, 196, 196);
     background-color: rgb(255, 255, 255);
@@ -12,9 +14,10 @@
 }
 
 .title {
-  position: relative;
-  left: 40px;
-  top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  margin-bottom: 0px;
 }
 
 .btn {
@@ -40,22 +43,29 @@
 }
 
 .guestBox {
-    width: 1200px;
     background-color: rgb(255, 255, 255);
-    padding: 40px 40px 0px 40px;
-    margin: 80px auto auto auto; 
+    padding-top: 40px;
+    margin-top: 30px; 
     border-radius: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
 .card {
+  position: relative;
+  right: 6px;
   width: 350px;
   height: 190px;
+  background-color: rgb(230, 235, 224);
+  border: 0px;
+  margin-right: 10px;
 }
 
 .imgTitleText {
   display: flex;
+  height: 100px;
+ }
+.imgTitleText > img {
+  height: 60px;
 }
 
 .titleText {
@@ -64,16 +74,13 @@
   top: 25px;
 }
 
-h6 {
-  max-width: 400px;
-  text-align: justify;
-
-  &:after {
-    content: "";
-    display: inline-block;
-    width: 100%;
-  }
+.cardBottom {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ height: 60px;
 }
+
 
 a:link {
   color: black;
@@ -89,7 +96,13 @@ a:active {
 }
 
 .moreContent {
-  margin: 20px 50px 50px auto;
-  padding-bottom: 30px;
-  text-align: right;
+  margin: 60px auto 30px auto;
+  text-align: center;
+}
+
+.col {
+  display: none; /* 모든 .col 요소를 처음에는 숨깁니다. */
+}
+.col:nth-child(-n+3) {
+  display: block; /* 처음 세 개의 .col 요소를 표시합니다. */
 }
