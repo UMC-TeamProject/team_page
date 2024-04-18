@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebase Image Upload</title>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    </head>
+    <body>
+
+        <div class="imageUpload">
+            <input type="file" class="inp" onchange="getImageData(event)" style="display: none;"/>
+            <button onclick="selectImage()" class="selectImage">Select Images</button>
+            <span class="filedata"></span>
+            <div class="progressBar">
+            <div class="progress"></div>
+            </div>
+
+            <button onclick="uploadImage()" class="upload">Upload</button>
+            <span class="loading">Loading...</span>
+            <img class="img" id="uploadedImage" />
+
+            <button onclick="uploadImage2()" class="upload">Upload</button>
+            <span class="loading2">Loading...</span>
+            <img class="img2" id="uploadedImage2" />
+
+            <button onclick="uploadImage3()" class="upload">Upload</button>
+            <span class="loading3">Loading...</span>
+            <img class="img3" id="uploadedImage3" />
+            
+        </div>
+
+        <script src="ImageUpload.js"></script>
+    </body>
+</html>
