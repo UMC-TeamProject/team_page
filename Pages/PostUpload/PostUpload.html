@@ -52,10 +52,10 @@
         let img = getImg();
 
         let doc = {
-            username: username,
-            comment: comment,
-            date: date,
-            img: img, 
+          username: username,
+          comment: comment,
+          date: date,
+          img: img,
         };
         await addDoc(collection(db, "guestBook"), doc);
 
@@ -107,23 +107,24 @@
           type="text"
           class="form-control"
           id="username"
-          placeholder="User name..."
+          placeholder="User name"
         />
       </div>
       <div class="mb-3">
-        <label for="inputComment" class="form-label">내용</label>
+        <label for="inputComment" class="form-label ">내용</label>
         <input
           type="text"
           class="form-control"
           id="comment"
-          placeholder="Comment..."
+          placeholder="comment"
         />
       </div>
       <button class="btn" id="upload" type="button">등록하기</button>
     </div>
 
-    <div class="cards">
-      <div class="row row-cols-1 row-cols-md-3" id="cards">
+    <div class="allCards">
+      <div class="row row-cols-1 row-cols-md-3 main" id="cards">
+
         <div class="col">
           <div class="card">
             <div class="card-body">
@@ -135,87 +136,92 @@
                 </div>
               </div>
               <div class="cardBottom">
-                <h6 class="card-subtitle text-muted" id="date">
-                  2024-04-15
-                </h6>
+                <h6 class="card-subtitle text-muted" id="date">2024-04-15</h6>
                 <a href="#" class="card-link">답글쓰기</a>
               </div>
             </div>
           </div>
-        </div>
+          </div>
 
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="imgTitleText">
-                <img src="userImg/민영님.png" />
-                <div class="titleText">
-                  <h5 class="card-title">장민영님</h5>
-                  <p class="card-text">잘 보고 갑니다!</p>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="imgTitleText">
+                  <img src="userImg/민영님.png" />
+                  <div class="titleText">
+                    <h5 class="card-title">장민영님</h5>
+                    <p class="card-text">잘 보고 갑니다!</p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardBottom">
-                <h6 class="card-subtitle text-muted">2024-04-15</h6>
-                <a href="#" class="card-link">답글쓰기</a>
+                <div class="cardBottom">
+                  <h6 class="card-subtitle text-muted">2024-04-15</h6>
+                  <a href="#" class="card-link">답글쓰기</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="imgTitleText">
-                <img src="userImg/선민님.png" />
 
-                <div class="titleText">
-                  <h5 class="card-title">김선민님</h5>
-                  <p class="card-text">잘 보고 갑니다!</p>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="imgTitleText">
+                  <img src="userImg/선민님.png" />
+
+                  <div class="titleText">
+                    <h5 class="card-title">김선민님</h5>
+                    <p class="card-text">잘 보고 갑니다!</p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardBottom">
-                <h6 class="card-subtitle text-muted">2024-04-15</h6>
-                <a href="#" class="card-link">답글쓰기</a>
+                <div class="cardBottom">
+                  <h6 class="card-subtitle text-muted">2024-04-15</h6>
+                  <a href="#" class="card-link">답글쓰기</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="imgTitleText">
-                <img src="userImg/승현님.png" />
-                <div class="titleText">
-                  <h5 class="card-title">황승현님</h5>
-                  <p class="card-text">잘 보고 갑니다!</p>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="imgTitleText">
+                  <img src="userImg/승현님.png" />
+                  <div class="titleText">
+                    <h5 class="card-title">황승현님</h5>
+                    <p class="card-text">잘 보고 갑니다!</p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardBottom">
-                <h6 class="card-subtitle text-muted">2024-04-15</h6>
-                <a href="#" class="card-link">답글쓰기</a>
+                <div class="cardBottom">
+                  <h6 class="card-subtitle text-muted">2024-04-15</h6>
+                  <a href="#" class="card-link">답글쓰기</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <div class="imgTitleText">
-                <img src="userImg/윤성님.png" />
-                <div class="titleText">
-                  <h5 class="card-title">양윤성님</h5>
-                  <p class="card-text">잘 보고 갑니다!</p>
+
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="imgTitleText">
+                  <img src="userImg/윤성님.png" />
+                  <div class="titleText">
+                    <h5 class="card-title">양윤성님</h5>
+                    <p class="card-text">잘 보고 갑니다!</p>
+                  </div>
                 </div>
-              </div>
-              <div class="cardBottom">
-                <h6 class="card-subtitle text-muted">2024-04-15</h6>
-                <a href="#" class="card-link">답글쓰기</a>
+                <div class="cardBottom">
+                  <h6 class="card-subtitle text-muted">2024-04-15</h6>
+                  <a href="#" class="card-link">답글쓰기</a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+
       </div>
     </div>
-    <button class="btn" type="button">더보기</button>
+    <div id="loadAll">
+    <a href="#" class="btn" id="load" type="button">더보기</a>
+  </div>
+    <!-- <button class="btn" id="load" type="button">더보기</button> -->
   </body>
   <script src="PostUploadJs.js"></script>
 </html>
