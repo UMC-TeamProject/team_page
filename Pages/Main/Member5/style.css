@@ -30,18 +30,29 @@
     justify-content: space-between;
   }
 
+  li {
+    list-style-type: none;
+  }
+
+  ul {
+    margin-top:15px;
+  }
+
+  .goal {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
   .card {
   width: 700px;
   height: 380px;
   }
-
-  p {
-  max-width: 500px;
-  position: relative;
-  left: 40px;
-  top: 50px;
-  }
-
+  
   .box {
   position: relative;
   left: 50px;
