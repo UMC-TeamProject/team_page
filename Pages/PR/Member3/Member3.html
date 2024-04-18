@@ -11,6 +11,7 @@
         
         .back{
             overflow-x: hidden;
+            width: 100%;
         }
         .set {
             background-color: green;
@@ -30,6 +31,14 @@
         .mtitle {
             margin-left: 30px;
             margin-top: 30px;
+        }
+
+        .link-frame {
+            width: 720px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: -200px;
         }
 
         .link {
@@ -67,7 +76,7 @@
 <body>
     <div class="back">
     <div class="row justify-content-md-center">
-        <div>
+        <div class="link-frame">
             <p class="mtitle">외부 사이트 링크</p>
             <div class="link">
                 <a href="">
@@ -81,7 +90,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-2">
+        <div class="col-2" id="download-frame">
             <p class="mtitle">자기소개서</p>
             <a href="" download>
                 <button type="button" class="btn btn-outline-secondary">다운<br>받기</button>

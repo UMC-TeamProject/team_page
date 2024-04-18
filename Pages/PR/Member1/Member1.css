@@ -1,13 +1,15 @@
 .Profile-frame {
+    margin-top: 50px;
     margin-left: 20px;
 }
 
 .Profile-header {
-    
+
 }
 
 .profile-title {
     font-size: 24px;
+    margin-bottom: 30px;
 }
 
 .profile-content {
