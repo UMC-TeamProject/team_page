@@ -1,12 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCfuj8jAGzn7Gf8C2aalXfjK7jL3opJErI",
-    authDomain: "license-92116.firebaseapp.com",
-    databaseURL: "https://license-92116-default-rtdb.firebaseio.com",
-    projectId: "license-92116",
-    storageBucket: "license-92116.appspot.com",
-    messagingSenderId: "577387850121",
-    appId: "1:577387850121:web:72f91aa60a85687f27d958",
-    measurementId: "G-9S2XE9SYE6"
+    apiKey: "AIzaSyAOIl8lGjrAMOKxISyiZYDBQl90_KbsQGQ",
+    authDomain: "fir-test-a9528.firebaseapp.com",
+    projectId: "fir-test-a9528",
+    storageBucket: "fir-test-a9528.appspot.com",
+    messagingSenderId: "629505375898",
+    appId: "1:629505375898:web:f9caabf91c52c50950e923",
+    measurementId: "G-RC1J39M158"
 };
 
 const app = firebase.initializeApp(firebaseConfig);
