@@ -19,11 +19,15 @@
     height: 190px;
     background-color: rgb(249, 249, 232);
     border: 0px;
-    margin: 20px;
+    margin: 25px;
 }
 
 .imgTitleText {
     display: flex;
+    height: 100px;
+   }
+.imgTitleText > img {
+    height: 60px;
 }
 
 .titleText {
@@ -32,15 +36,12 @@
     top: 25px;
 }
 
-h6 {
-    max-width: 400px;
-    text-align: justify;
-
-    &:after {
-        content: "";
-        display: inline-block;
-        width: 100%;
-    }
+.cardBottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   height: 60px;
+   
 }
 h3 {
     width: 1200px;
@@ -49,9 +50,6 @@ h3 {
 }
 
 .btn {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0px;
     font-family: Arial;
     color: #ffffff;
     font-size: 15px;
@@ -60,4 +58,9 @@ h3 {
     text-decoration: none;
     margin: 50px auto;
     display: flex;
+}
+.btn:hover{
+    background: white;
+  text-decoration: none;
+  border: 0.5px solid#c9d0d4;
 }
