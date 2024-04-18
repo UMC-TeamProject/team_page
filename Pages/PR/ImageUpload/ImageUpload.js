@@ -27,51 +27,51 @@ const firebaseConfig = {
     let uploadedFileName;
 
     const selectImage = () => {
-    inp.click();
+        inp.click();
     };
 
     const getImageData = (e) => {
-    file = e.target.files[0];
-    fileName = Math.round(Math.random() * 9999) + file.name;
-    if (fileName) {
-        fileData.style.display = "block";
-    }
-    fileData.innerHTML = fileName;
+        file = e.target.files[0];
+        fileName = Math.round(Math.random() * 9999) + file.name;
+        if (fileName) {
+            fileData.style.display = "block";
+        }
+        fileData.innerHTML = fileName;
     };
 
     const uploadImage = () => {
-    loading.style.display = "block";
-    const storageRef = storage.ref().child("myimages");
-    const folderRef = storageRef.child(fileName);
-    const uploadtask = folderRef.put(file);
+        loading.style.display = "block";
+        const storageRef = storage.ref().child("myimages");
+        const folderRef = storageRef.child(fileName);
+        const uploadtask = folderRef.put(file);
 
-    uploadtask.on(
-        "state_changed",
-        (snapshot) => {
-        progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        progress = Math.round(progress);
-        progressbar.style.width = progress + "%";
-        progressbar.innerHTML = progress + "%";
-        uploadedFileName = snapshot.ref.name;
-        },
-        (error) => {
-        console.log(error);
-        },
-        () => {
-        storage
-            .ref("myimages")
-            .child(uploadedFileName)
-            .getDownloadURL()
-            .then((url) => {
-            localStorage.setItem("uploadedImageUrl", url); 
-            img.setAttribute("src", url);
-            loading.style.display = "none";
-            })
-            .catch((error) => {
-            console.error('Error getting download URL:', error);
-            });
-        }
-    );
+        uploadtask.on(
+            "state_changed",
+            (snapshot) => {
+                progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                progress = Math.round(progress);
+                progressbar.style.width = progress + "%";
+                progressbar.innerHTML = progress + "%";
+                uploadedFileName = snapshot.ref.name;
+            },
+            (error) => {
+                console.log(error);
+            },
+            () => {
+                storage
+                    .ref("myimages")
+                    .child(uploadedFileName)
+                    .getDownloadURL()
+                    .then((url) => {
+                        localStorage.setItem("uploadedImageUrl", url); 
+                        img.setAttribute("src", url);
+                        loading.style.display = "none";
+                    })
+                    .catch((error) => {
+                        console.error('Error getting download URL:', error);
+                    });
+            }
+        );
     };
 
     const uploadImage2 = () => {
@@ -83,14 +83,14 @@ const firebaseConfig = {
         uploadtask.on(
             "state_changed",
             (snapshot) => {
-            progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            progress = Math.round(progress);
-            progressbar.style.width = progress + "%";
-            progressbar.innerHTML = progress + "%";
-            uploadedFileName = snapshot.ref.name;
+                progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                progress = Math.round(progress);
+                progressbar.style.width = progress + "%";
+                progressbar.innerHTML = progress + "%";
+                uploadedFileName = snapshot.ref.name;
             },
             (error) => {
-            console.log(error);
+                console.log(error);
             },
             () => {
             storage
@@ -98,12 +98,12 @@ const firebaseConfig = {
                 .child(uploadedFileName)
                 .getDownloadURL()
                 .then((url) => {
-                localStorage.setItem("uploadedImageUrl2", url); 
-                img2.setAttribute("src", url);
-                loading2.style.display = "none";
+                    localStorage.setItem("uploadedImageUrl2", url); 
+                    img2.setAttribute("src", url);
+                    loading2.style.display = "none";
                 })
                 .catch((error) => {
-                console.error('Error getting download URL:', error);
+                    console.error('Error getting download URL:', error);
                 });
             }
         );
