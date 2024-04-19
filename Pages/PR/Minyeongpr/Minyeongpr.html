@@ -17,4 +17,15 @@
         <iframe class="iframe" id="frame4" src="../Minyeongpr/Prfolder/ImageUpload/ImageUpload.html" width="100%" height="600px"></iframe>
         <iframe class="iframe" id="frame5" src="../Minyeongpr/Prfolder/Projectexp/project.html" width="100%" height="600px"></iframe>
     </div>
+    <script>
+        $(function () {
+            const url = new URL(window.location);
+            const urlParams = url.searchParams;
+            if(urlParams.get('s')) {
+                const scrollTop = $('#'+urlParams.get('s')).offset().top;
+            
+                $('html, body').animate({scrollTop: scrollTop-59}, 500);
+            }
+        });
+    </script>
 </body>
