@@ -145,10 +145,15 @@ button {
     width: 100%;
 }
 
-.list {
+.listFrame{
     display: flex;
-    justify-content: space-around;
 
+}
+.list {
+    width: 1120px;
+    display: flex;
+    margin-left: 100px;
+    justify-content: space-between;
 }
 
 .image123 {
