@@ -1,3 +1,7 @@
+.back{
+  overflow-x: hidden;
+    width: 100%;
+}
 .guestBook-frame {
     display: flex;
     justify-content: center;
@@ -49,13 +53,13 @@
   }
 
   .card {
-  width: 700px;
+  width: 600px;
   height: 380px;
   }
   
   .box {
   position: relative;
-  left: 50px;
+  left: 5px;
   top: 10px;
   width: 350px;
   height: 350px;
